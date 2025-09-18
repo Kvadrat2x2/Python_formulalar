@@ -1,0 +1,15 @@
+def tubsonlar(x):
+  if x < 2: 
+    return False
+  for i in range(2, int(x**0.5)+1):
+    if x % i == 0:
+      return False
+    return True
+
+
+lst = list(map(int, input().split()))
+Tub = [x for x in lst if tubsonlar(x)]
+print(Tub)
+
+
+# Listdan qisqartirilgan for va IF bilan Tubsonlarni ajratib olish formulasi

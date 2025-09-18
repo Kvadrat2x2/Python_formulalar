@@ -1,0 +1,8 @@
+def Tubsonlar(x):
+  return False if x < 2 else all(x % i != 0 for i in range(2, int(x ** 0.5)+1))
+
+lst = [2, 56, 23, 7]
+tub = [x for x in lst if Tubsonlar(x)]
+print(tub)
+
+# Tubsonlarni Short_ formda Listdan ajratish formulasi

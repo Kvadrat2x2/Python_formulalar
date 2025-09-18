@@ -1,0 +1,10 @@
+def Ekub(x, y):
+  while y != 0:
+    x, y = y, x % y
+  return x
+
+x, y = 12, 5
+print(Ekub(x,y))
+
+
+  # (x = y), y = x % y

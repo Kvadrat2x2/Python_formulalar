@@ -7,10 +7,8 @@ def tubson(x):
   return True
 summ = 0
 n = int(input())
-for i in range(n):
-  if tubson(i):
-    if n % i == 0:
-      n //= i
-      summ += i
+for i in range(2, n+1):
+  if tubson(i) and n % i == 0:
+    summ += i
 
 print(summ)

@@ -1,0 +1,16 @@
+def tubson(x):
+  if x < 2:
+    return False
+  for i in range(2, int(x**0.5)+1):
+    if x % i == 0:
+      return False
+  return True
+summ = 0
+n = int(input())
+for i in range(n):
+  if tubson(i):
+    if n % i == 0:
+      n //= i
+      summ += i
+
+print(summ)

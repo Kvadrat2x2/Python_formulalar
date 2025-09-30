@@ -1,0 +1,10 @@
+n = int(input())
+lst = []
+while n != 0:
+  b = n % 10
+  lst.append(b)
+  n //= 10
+x = 0
+for i in lst:
+  x = x * 10 + i
+print(x)
